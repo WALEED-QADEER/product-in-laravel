@@ -3,7 +3,11 @@
 @section('title', 'Home Page')
 
 @section('content')
-    <h1>Welcome to the Home Page</h1>
-    <a href="{{ route('products.index') }}" class="btn btn-primary">View Products List</a>
-    <a href="{{ route('products.create') }}" class="btn btn-success">Add New Product</a>
+    <div class="home-container">
+        <h2 class="welcome-message">Welcome to the Home Page</h2>
+        <div class="button-containers">
+            <a href="{{ route('products.index') }}" class="btn btn-primary">View Products</a>
+            <a href="{{ route('products.index') }}" class="btn btn-success">Manage Products</a>
+        </div>
+    </div>
 @endsection

@@ -1,0 +1,297 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b9c28;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Image Styling */
+table img {
+    border-radius: 5px;
+}
+
+table td a:hover {
+    color: #2980b9;
+}
+
+/* Delete Button Styling */
+table td form button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table td form button:hover {
+    background-color: #c0392b;
+}
+
+/* Button Styles */
+.view-button, .edit-button {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.view-button {
+    background-color: #2ecc71; /* Green for View */
+}
+
+.view-button:hover {
+    background-color: #27ae60;
+}
+
+.edit-button {
+    background-color: #f39c12; /* Orange for Edit */
+}
+
+.edit-button:hover {
+    background-color: #e67e22;
+}
+
+/* Updated Action Links Styling */
+table td a {
+    margin-right: 8px;
+}
+
+/* Form Styling */
+.product-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.product-form input[type="text"],
+.product-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.product-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.product-form input[type="file"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.product-form input[type="text"]:focus,
+.product-form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Submit Button Styling */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Product View Styles */
+.product-view {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px; /* Space between image and details */
+}
+
+.product-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+    flex: 2; /* Take more space compared to the image */
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px; /* Space below the title */
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 15px; /* Space below the description */
+    line-height: 1.5; /* Improve readability */
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c; /* Red color for the price */
+    margin: 0 0 20px; /* Space below the price */
+}
+
+.product-price span {
+    font-size: 22px; /* Slightly larger price */
+}
+
+.back-button {
+    margin: 10px 0; /* Add space around the button */
+}
+
+.back-link {
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Set font size */
+    color: #3498db; /* Blue color for the link */
+    font-weight: bold; /* Make the font bold */
+}
+
+.back-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Home Page Styles */
+.home-container {
+    text-align: center; /* Center-align the content */
+    padding: 50px; /* Add padding to the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto; /* Center the container with margin */
+    max-width: 600px; /* Limit maximum width */
+}
+
+.welcome-message {
+    font-size: 24px; /* Set font size */
+    margin-bottom: 30px; /* Space below the message */
+    color: #333; /* Dark text color */
+}
+
+.button-containers {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.btn-primary {
+    background-color: #3498db; /* Blue background */
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Green background */
+}
+
+.btn-success:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}

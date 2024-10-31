@@ -6,17 +6,18 @@
     <title>@yield('title', 'My Laravel App')</title>
     <!-- Add any other shared styles or scripts here -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 <body>
     <header>
+        <h1>@yield('header', 'Product Management System')</h1>
     </header>
 
     <main>
-        @yield('content')
+        <div class="main-container">
+            @yield('content')
+        </div>
     </main>
-
-    <footer>
-    </footer>
 
 </body>
 </html>
