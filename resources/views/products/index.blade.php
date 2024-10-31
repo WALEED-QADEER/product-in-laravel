@@ -3,6 +3,9 @@
 @section('title', 'Product List')
 
 @section('content')
+    <div class="back-button">
+        <a href="javascript:history.back()" class="back-link">← Back</a>
+    </div>
     <h1>Product List</h1>
     <div class="button-container">
         <a href="{{ route('products.create') }}" class="add-button">Add New Product</a>

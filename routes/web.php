@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/products/customer', [ProductController::class, 'customerIndex'])->name('products.customer.index');
 Route::resource('products', ProductController::class);
